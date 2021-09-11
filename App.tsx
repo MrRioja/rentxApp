@@ -25,12 +25,12 @@ export default function App() {
   });
 
   if (!fontsLoaded) {
-    return (
-      <ThemeProvider theme={theme}>
-        <AppLoading />
-      </ThemeProvider>
-    );
+    return <AppLoading />;
   }
 
-  return <Home />;
+  return (
+    <ThemeProvider theme={theme}>
+      <Home />
+    </ThemeProvider>
+  );
 }
