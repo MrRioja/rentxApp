@@ -8,7 +8,7 @@ import { CarDTO } from "../../dtos/CarDTO";
 import { api } from "../../services/api";
 
 import { BackButton } from "../../components/BackButton";
-import { Load } from "../../components/Load";
+import { LoadAnimation } from "../../components/LoadAnimation";
 import { Car } from "../../components/Car";
 
 import {
@@ -82,7 +82,7 @@ export function MyCars() {
       </Header>
 
       {isLoading ? (
-        <Load />
+        <LoadAnimation />
       ) : (
         <Content>
           <Appointments>
@@ -92,7 +92,7 @@ export function MyCars() {
 
           <FlatList
             data={cars}
-            keyExtractor={(item) => item.id}
+            keyExtractor={(item) => String(item.id)}
             renderItem={({ item }) => (
               <CarWrapper>
                 <Car data={item.car} />
