@@ -1,11 +1,13 @@
 {
+  "name": "rentxApp",
   "expo": {
     "name": "rentxApp",
     "slug": "rentxApp",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
-  },
-  "name": "rentxApp"
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#1B1B1F"
+    }
+  }
 }
