@@ -11,6 +11,8 @@ declare global {
       Scheduling: string;
       SchedulingDetails: string;
       SchedulingComplete: string;
+      SignUpFirstStep: string;
+      SignUpSecondStep: string;
     }
   }
 }
