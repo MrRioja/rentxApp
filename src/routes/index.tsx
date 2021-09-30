@@ -10,7 +10,7 @@ declare global {
       CarDetails: string;
       Scheduling: string;
       SchedulingDetails: string;
-      SchedulingComplete: string;
+      Confirmation: string;
       SignUpFirstStep: string;
       SignUpSecondStep: string;
     }
