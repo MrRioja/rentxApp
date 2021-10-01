@@ -27,6 +27,7 @@ export function SignUpFirstStep() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [driverLicense, setDriverLicense] = useState("");
+
   const navigation = useNavigation();
 
   async function handleNextStep() {
