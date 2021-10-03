@@ -24,17 +24,27 @@ export function Home() {
   }
 
   useEffect(() => {
-    async function loadData() {
+    let isMounted = true;
+
+    async function fetchCars() {
       try {
         const response = await api.get("/cars");
-        setCars(response.data);
+
+        if (isMounted) {
+          setCars(response.data);
+        }
       } catch (error) {
       } finally {
-        setLoading(false);
+        if (isMounted) {
+          setLoading(false);
+        }
       }
     }
 
-    loadData();
+    fetchCars();
+    return () => {
+      isMounted = false;
+    };
   }, []);
 
   return (
