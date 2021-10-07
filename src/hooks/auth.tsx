@@ -7,8 +7,8 @@ import React, {
 } from "react";
 
 import { api } from "../services/api";
-import { database } from "../../database";
-import { User as ModelUser } from "../../database/model/User";
+import { database } from "../database";
+import { User as ModelUser } from "../database/model/User";
 
 interface User {
   id: string;
