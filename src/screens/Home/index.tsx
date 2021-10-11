@@ -37,12 +37,13 @@ export function Home() {
         );
 
         const { changes, latestVersion } = response.data;
+
         return { changes, timestamp: latestVersion };
       },
       pushChanges: async ({ changes }) => {
         const user = changes.users;
 
-        await api.post("users/sync", user);
+        await api.post("users/sync", user).catch(console.log);
       },
     });
   }
