@@ -35,6 +35,7 @@ import {
   OptionTitle,
   Section,
 } from "./styles";
+import { useNetInfo } from "@react-native-community/netinfo";
 
 export function Profile() {
   const { user, signOut, updatedUser } = useAuth();
@@ -45,9 +46,16 @@ export function Profile() {
   const [driverLicense, setDriverLicense] = useState(user.driver_license);
 
   const theme = useTheme();
+  const netInfo = useNetInfo();
   const navigation = useNavigation();
 
   function handleOptionChange(optionSelected: "dataEdit" | "passwordEdit") {
+    if (netInfo.isConnected === false && optionSelected === "passwordEdit") {
+      return Alert.alert(
+        "Você está offline",
+        "Para mudar a senha, conecte-se a internet"
+      );
+    }
     setOption(optionSelected);
   }
 
