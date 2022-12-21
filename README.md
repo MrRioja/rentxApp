@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="#sobre">Sobre</a> •
-  <a href="#rentxApp">rentxApp</a> •
+  <a href="#rentx">RentX</a> •
   <a href="#instalação">Instalação</a> •
   <a href="#tecnologias">Tecnologias</a> •
   <a href="#autor">Autor</a>  
@@ -28,7 +28,11 @@
 
 ## Sobre
 
-## rentxApp
+🚧 Em construção 🚧
+
+## RentX
+
+🚧 Em construção 🚧
 
 ## Instalação
 
