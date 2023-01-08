@@ -63,7 +63,7 @@ export function SignUpSecondStep() {
         });
       })
       .catch(() => {
-        Alert.alert("Opa", "Não foi concluir o cadastro");
+        Alert.alert("Opa", "Não foi possível concluir o cadastro.");
       });
   }
 
@@ -72,7 +72,7 @@ export function SignUpSecondStep() {
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <Container>
           <Header>
-            <BackButton onPress={() => navigation.goBack()} />
+            <BackButton onPress={navigation.goBack} />
             <Steps>
               <Bullet active />
               <Bullet />
