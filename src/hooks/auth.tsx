@@ -4,6 +4,7 @@ import React, {
   useContext,
   ReactNode,
   useEffect,
+  useMemo,
 } from "react";
 
 import { api } from "../services/api";
@@ -41,6 +42,11 @@ const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 function AuthProvider({ children }: AuthProviderProps) {
   const [data, setData] = useState<User>({} as User);
   const [loading, setLoading] = useState(true);
+
+  const dataProvided = useMemo(
+    () => ({ user: data, signIn, signOut, updatedUser, loading }),
+    []
+  );
 
   async function signIn({ email, password }: SignInCredentials) {
     try {
@@ -126,11 +132,7 @@ function AuthProvider({ children }: AuthProviderProps) {
   }, []);
 
   return (
-    <AuthContext.Provider
-      value={{ user: data, signIn, signOut, updatedUser, loading }}
-    >
-      {children}
-    </AuthContext.Provider>
+    <AuthContext.Provider value={dataProvided}>{children}</AuthContext.Provider>
   );
 }
 
