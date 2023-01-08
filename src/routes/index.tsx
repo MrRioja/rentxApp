@@ -12,7 +12,11 @@ declare global {
       CarDetails: string;
       Scheduling: string;
       SchedulingDetails: string;
-      Confirmation: string;
+      Confirmation: {
+        title: string;
+        message: string;
+        nextScreenRoute: string;
+      };
       SignIn: string;
       SignUpFirstStep: string;
       SignUpSecondStep: string;
