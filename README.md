@@ -6,15 +6,12 @@
   Seu novo carro te espera aqui!
 </h3>
 
-<br><br>
-
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=Rentx&message=App&color=blueviolet&style=for-the-badge"/>
   <img src="https://img.shields.io/github/license/MrRioja/rentxApp?color=blueviolet&logo=License&style=for-the-badge"/>
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MrRioja/rentxApp?color=blueviolet&logo=TypeScript&logoColor=white&style=for-the-badge">
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/MrRioja/rentxApp?color=blueviolet&style=for-the-badge">
 </p>
-<br>
 
 <p align="center">
   <a href="#sobre">Sobre</a> •
@@ -23,8 +20,6 @@
   <a href="#tecnologias">Tecnologias</a> •
   <a href="#autor">Autor</a>  
 </p>
-
-<br><br><br>
 
 ## Sobre
 
@@ -37,8 +32,7 @@
 ## Instalação
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
+[Git](https://git-scm.com) e [Node.js](https://nodejs.org/en/). Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/).
 
 ### 📱 Rodando o App
 
@@ -66,11 +60,7 @@ $ yarn ios
 
 ## Tecnologias
 
-<img align="left" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="75" />
-
-<img align="left" src="https://www.svgrepo.com/show/353722/expo.svg" alt="Expo" height="100" />
-
-<br><br><br><br>
+[![My Skills](https://skillicons.dev/icons?i=nodejs,react,babel)](https://skillicons.dev)
 
 ## Autor
 
