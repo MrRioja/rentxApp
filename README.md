@@ -23,11 +23,57 @@
 
 ## Sobre
 
-🚧 Em construção 🚧
+Projeto desenvolvido durante o bootcamp da Ignite da Rocketseat durante a trilha de React Native.
 
 ## RentX
 
-🚧 Em construção 🚧
+O RentX é um app de locação de automóveis. Trata-se de uma aplicação mobile criado com React Native e Typescript.
+
+Ao acessar o app pela primeira vez o usuário irá se deparar com a tela abaixo, onde poderá realizar login ou criar uma conta caso não tenha:
+
+<img src=".github/login.png" alt="Tela de login" width="350" />
+
+Supondo que ele não possua conta ainda, vamos conhecer o fluxo de cadastro do app. As imagens a seguir compõem o fluxo de registro e estão ordenadas em seu fluxo natural do app:
+
+|                               Dados Pessoais                               |                               Definição de senha                               |                                   Visualização das senhas                                   |                               Confirmação de cadastro                               |
+| :------------------------------------------------------------------------: | :----------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| <img src=".github/register-step-1.png" alt="Dados Pessoais" width="350" /> | <img src=".github/register-step-2.png" alt="Definição de senha" width="350" /> | <img src=".github/register-step-2-uncrypt.png" alt="Visualização das senhas" width="350" /> | <img src=".github/account-created.png" alt="Confirmação de cadastro" width="350" /> |
+
+Após criar a conta e acessa-la através da tela de login mostrada anteriormente, o usuário será direcionado para a home do app, visualização semelhante ao exemplo abaixo:
+
+<img src=".github/home.png" alt="Home" width="350" />
+
+É na home aonde o usuário fica ciente de quantos e quais carros estão disponíveis para locação. Após navegar pelas opções e se interessar por um dos carros, o usuário pode clicar no card para ver mais detalhes do automóvel, como: descrição, preço, fotos e acessórios. Abaixo um exemplo dos detalhes de um dos carros:
+
+<img src=".github/car-detail.png" alt="Detalhes do carro" width="350" />
+
+Estando de acordo com os valores e gostando do veiculo, o usuário pode clicar no botão `Escolher período do aluguel` para ver as datas disponíveis e escolher o período em que deseja alugar o carro:
+
+<img src=".github/choose-period.png" alt="Escolha de período de locação" width="350" />
+
+Após a definição do período, o usuário verá uma tela de confirmação com os detalhes da locação que está prestes a concluir e estando de acordo com os detalhes basta ele finalizar o agendamento e o aluguel já estará registrado na plataforma. Esse fluxo está ilustrado nas próximas capturas de telas:
+
+|                               Detalhes da locação                                |                                  Preço da locação                                   |                            Confirmação da locação                            |
+| :------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+| <img src=".github/schedule-details.png" alt="Detalhes da locação" width="350" /> | <img src=".github/schedule-details-price.png" alt="Preço da locação" width="350" /> | <img src=".github/scheduled.png" alt="Confirmação da locação" width="350" /> |
+
+Agora que vimos como realizar uma locação, vamos conhecer aonde podemos consulta-las. Na home do aplicativo, na parte inferior da tela, temos nosso menu de navegação. Ao clicar na opção do meio, o usuário será direcionado para os seus agendamentos, onde terá a sua disposição informações do total de alugueis agendados, quais os carros desejados, o valor da diária e período desejado para cada um dos automóveis, como podemos ver abaixo:
+
+<img src=".github/schedules.png" alt="Agendamentos" width="350" />
+
+A ultima opção do menu contem o perfil do usuário e a opção para deslogar do app. Abaixo temos esse fluxo ilustrado, onde:
+
+- Primeira imagem: Mostra o perfil do usuário, onde ele pode por exemplo alterar sua foto de perfil e o número de sua CNH.
+- Segunda imagem: Opção para o usuário alterar a sua senha de acesso.
+- Terceira imagem: Ao clicar no botão localizado no canto superior direito, a mensagem da imagem é exibida pro usuário antes do logoff ser realizado.
+
+|                             Dados do usuário                              |                                 Alteração de senha                                 |                             Confirmação para logout                              |
+| :-----------------------------------------------------------------------: | :--------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| <img src=".github/profile-data.png" alt="Dados do usuário" width="350" /> | <img src=".github/profile-change-pass.png" alt="Alteração de senha" width="350" /> | <img src=".github/exit-confirm.png" alt="Confirmação para logout" width="350" /> |
+
+E esse é o app do RentX, simples e objetivo porém atendendo aos requisitos que lhe foi imposto. Deixo abaixo uma demonstração do app em funcionamento onde navego por todas as funcionalidades disponíveis no app para fins demonstrativos:
+
+<img src=".github/demo.gif" alt="Demonstraçã do app" width="350" />
 
 ## Instalação
 
